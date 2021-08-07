@@ -13,7 +13,7 @@ const shuffleArray = (input) => {
   return array;
 };
 
-export default ({ meals }) => {
+export default ({ meals, onChange }) => {
   const [currentMeals, setCurrentMeals] = useState(meals);
   const [inputText, setInputText] = useState(null);
   const mealToAdd = {
@@ -23,7 +23,9 @@ export default ({ meals }) => {
         ? Math.max(...currentMeals.map((m) => m.id)) + 1
         : 0,
   };
-  console.log(currentMeals.map((m) => m.id));
+  if (meals.length > 0) {
+    onChange(currentMeals);
+  }
   return (
     <div className="cardContainer">
       <div className="adder">
