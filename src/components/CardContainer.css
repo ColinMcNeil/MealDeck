@@ -1,0 +1,46 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.adder {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 239, 220);
+}
+.adder * {
+  font-size: 2rem;
+}
+input {
+  width: 200px;
+  background-color: rgba(0,0,0,0.1);
+}
+input, button {
+  padding: 0.5em;
+  border: none;
+  outline: none;
+}
+
+input:focus, button:hover {
+  background-color: rgba(0,0,0,0.2);
+}
+
+button {
+  cursor: pointer;
+}
+.shuffle {
+  color: white;
+  background-color: black;
+}
+.shuffle:hover{
+  color: black;
+}
+.adder, .cards {
+  flex-basis: 100%;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+}

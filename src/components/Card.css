@@ -1,0 +1,26 @@
+.card {
+  background-color: rgb(197, 224, 197);
+  flex: 0 0 250px;
+  height: 150px;
+  width: 150px;
+  margin: 5px;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+.card.first {
+  border: solid green 2px;
+  font-weight: bold;
+}
+.cardTop {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.cardTop span {
+  max-width: 100px;
+  word-wrap: break-word;
+  overflow-y: auto;
+  max-height: 120px;
+}
