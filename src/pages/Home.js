@@ -10,7 +10,11 @@ export default () => {
       <p>A helpful tool to plan meals</p>
       <p>
         Idea by Sarah Schmieder, developed by{" "}
-        <a href="https://colinmcneil.me/" target="_blank">
+        <a
+          href="https://colinmcneil.me/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           me
         </a>
       </p>
