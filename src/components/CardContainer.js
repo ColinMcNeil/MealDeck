@@ -38,11 +38,14 @@ export default ({ meals, onChange }) => {
           +
         </button>
         <button
-          className="shuffle"
+          className="action shuffle"
           onClick={() => setCurrentMeals(shuffleArray(currentMeals))}
         >
           Shuffle
         </button>
+        <a href="/new">
+          <button className="action new">New Deck</button>
+        </a>
       </div>
       <FlipMove className="cards" staggerDurationBy="30" duration={200}>
         {currentMeals.map((meal, i) => (

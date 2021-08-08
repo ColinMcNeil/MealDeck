@@ -29,12 +29,16 @@ input:focus, button:hover {
 button {
   cursor: pointer;
 }
-.shuffle {
+.action {
   color: white;
   background-color: black;
 }
-.shuffle:hover{
+.action.new {
+  background-color: rgb(13, 51, 77);
+}
+.action:hover, .action.new:hover{
   color: black;
+  background-color: rgba(0,0,0,0.2);
 }
 .adder, .cards {
   flex-basis: 100%;

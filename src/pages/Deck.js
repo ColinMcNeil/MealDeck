@@ -6,6 +6,9 @@ import { encodeDeck } from "../lib/urlEncoding";
 
 export default () => {
   const { id } = useParams();
+  if (!id) {
+    window.location.href = "/new";
+  }
   return (
     <CardContainer
       meals={decodeDeck(id)}
