@@ -2,4 +2,63 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.5em;
+  background-color: rgb(21, 67, 104);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  color: white;
+}
+.home h1 {
+  margin-bottom: 0px;
+}
+.home hr{
+  border-color: rgba(255, 255, 255, 0.322);
+  width: 30%;
+  min-width: 150px;
+  outline: none;
+}
+.home p {
+  margin: 20px 0;
+}
+.home a {
+  color: rgb(116, 250, 255);
+  background-color: rgb(24, 21, 48);
+  text-decoration: none;
+  padding: 0 5px;
+  border-radius: 2px;
+  transition: all ease 0.2s;
+  font-weight: bold;
+}
+.home a:hover {
+  background-color: rgb(41, 37, 75);
+}
+.home textarea {
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.082);
+  color: white;
+  width: 400px;
+  height: 100%;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.paste button {
+  height: 100%;
+  padding: 5px;
+  background-color: white;
+  font-weight: bold;
+}
+.paste button:hover {
+  color: white;
+}
+.paste a {
+  padding: 0;
+  height: 100%;
+}
+.paste {
+  display: flex;
+  align-items: center;
+  height: 40px;
 }
