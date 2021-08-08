@@ -23,7 +23,7 @@ export default ({ meals, onChange }) => {
         ? Math.max(...currentMeals.map((m) => m.id)) + 1
         : 0,
   };
-  if (meals.length > 0) {
+  if (currentMeals.length > 0) {
     onChange(currentMeals);
   }
   return (
