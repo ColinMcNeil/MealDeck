@@ -28,25 +28,33 @@ export default ({ meals, onChange }) => {
   }
   return (
     <div className="cardContainer">
-      <div className="adder">
-        <input
-          type="text"
-          placeholder="Meal name"
-          onChange={(e) => setInputText(e.target.value)}
-        />
-        <button onClick={() => setCurrentMeals([...currentMeals, mealToAdd])}>
-          +
-        </button>
-        <button
-          className="action shuffle"
-          onClick={() => setCurrentMeals(shuffleArray(currentMeals))}
-        >
-          Shuffle
-        </button>
-        <a href="/new">
-          <button className="action new">New Deck</button>
-        </a>
+      <div className="toolbar">
+        <div className="add">
+          <input
+            type="text"
+            placeholder="Meal name"
+            onChange={(e) => setInputText(e.target.value)}
+          />
+          <button
+            onClick={() => setCurrentMeals([...currentMeals, mealToAdd])}
+            disabled={!inputText || !inputText.length}
+          >
+            +
+          </button>
+        </div>
+        <div className="actions">
+          <button
+            className="action shuffle"
+            onClick={() => setCurrentMeals(shuffleArray(currentMeals))}
+          >
+            Shuffle
+          </button>
+          <a href="/new">
+            <button className="action new">New Deck</button>
+          </a>
+        </div>
       </div>
+
       <FlipMove className="cards" staggerDurationBy="30" duration={200}>
         {currentMeals.map((meal, i) => (
           <Card
